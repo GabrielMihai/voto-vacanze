@@ -4,6 +4,19 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useRouter } from 'vue-router';
+
+import { useUsersStore } from './stores/UsersStore';
+const { selectedUser } = useUsersStore();
+
+const router = useRouter();
+
+if (!selectedUser) {
+  router.push({
+    path: '/login',
+  });
+}
+</script>
 
 <style scoped></style>

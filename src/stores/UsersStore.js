@@ -6,27 +6,27 @@ export const useUsersStore = defineStore('UsersStore', {
       users: [
         {
           name: 'Alessia',
-          place: 'Sicilia - Porto Trilly',
+          destination: 'Sicilia - Porto Trilly',
         },
         {
           name: 'Claudia',
-          place: 'Creta',
+          destination: 'Creta',
         },
         {
           name: 'Dario',
-          place: 'Sicilia - Porto Palo',
+          destination: 'Sicilia - Porto Palo',
         },
         {
           name: 'Federica',
-          place: 'Corsica',
+          destination: 'Corsica',
         },
         {
           name: 'Gabriel',
-          place: 'Sardegna - Alghero',
+          destination: 'Sardegna - Alghero',
         },
         {
           name: 'Rodrigo',
-          place: 'Francia - tutta',
+          destination: 'Francia - tutta',
         },
       ],
       selectedUser: undefined,
