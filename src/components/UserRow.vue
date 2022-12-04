@@ -5,7 +5,7 @@
       :key="index"
       :class="`w-1/8 border-r-2 border-r-black ${
         key === 'name' ? 'bg-slate-700' : key === 'destination' ? 'bg-slate-600' : 'bg-slate-500'
-      } flex justify-center items-center text-white text-lg`"
+      } flex justify-center items-center text-white`"
     >
       <div v-if="['name', 'destination', 'total'].includes(key)">
         <div v-if="key === 'destination'" class="flex flex-col">
@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref, reactive } from 'vue';
+import { ref, reactive } from 'vue';
 import { cloneDeep } from 'lodash';
 
 const props = defineProps({
