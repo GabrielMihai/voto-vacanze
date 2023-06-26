@@ -1,5 +1,6 @@
 <template>
   <div class="h-1/6 flex border-b-2 border-b-black">
+  <h1>Ciaone</h1>
     <div
       v-for="(value, key, index) in state.lazyUser"
       :key="index"
